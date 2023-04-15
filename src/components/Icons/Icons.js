@@ -72,13 +72,14 @@ export const LinkedInIcon = ({ className, ...rest }) => (
   </svg>
 );
 
-export const ReadCVIcon = (props) => (
+export const ReadCVIcon = ({ className, ...rest }) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     width={341}
     height={361}
     fill='none'
-    {...props}
+    className={`h-full w-auto ${className}`}
+    {...rest}
   >
     <rect
       width={252.889}
@@ -121,14 +122,15 @@ export const ReadCVIcon = (props) => (
   </svg>
 );
 
-export const FacebookIcon = (props) => (
+export const FacebookIcon = ({ className, ...rest }) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     xmlSpace='preserve'
     width={800}
     height={800}
     viewBox='0 0 512 512'
-    {...props}
+    className={`${className}`}
+    {...rest}
   >
     <path
       d='M134.941 272.691h56.123v231.051a8.256 8.256 0 0 0 8.258 8.258h95.159a8.256 8.256 0 0 0 8.258-8.258V273.78h64.519a8.26 8.26 0 0 0 8.204-7.315l9.799-85.061a8.259 8.259 0 0 0-8.202-9.203h-74.316V118.88c0-16.073 8.654-24.224 25.726-24.224h48.59a8.258 8.258 0 0 0 8.258-8.258V8.319a8.256 8.256 0 0 0-8.258-8.258h-66.965A65.863 65.863 0 0 0 307.027 0c-11.619 0-52.006 2.281-83.909 31.63-35.348 32.524-30.434 71.465-29.26 78.217v62.352H134.94a8.256 8.256 0 0 0-8.258 8.258v83.975a8.26 8.26 0 0 0 8.259 8.259z'

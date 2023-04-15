@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import React from 'react';
 import { NavLinks, SocMed, CustomLink } from './Navbar.utils';
 import { Logo } from '@components/index';
+import { motion } from 'framer-motion';
 
 import { SocialIcon } from 'react-social-icons';
 
@@ -20,18 +20,21 @@ const Navbar = () => {
       </nav>
 
       <nav className='flex items-center justify-end flex-wrap'>
-        {SocMed?.map((soc, idx) => (
-          <Link
+        {SocMed?.map(({ to, animation }, idx) => (
+          <motion.span
+            initial={animation.initial}
+            animate={animation.animate}
+            transition={animation.transition}
             key={idx}
-            href={soc.to}
+            href={to}
             target='_blank'
           >
             <SocialIcon
-              url={soc.to}
-              // bgColor='transparent'
-              // fgColor='gray'
+              url={to}
+              bgColor='transparent'
+              fgColor='gray'
             />
-          </Link>
+          </motion.span>
         ))}
       </nav>
 

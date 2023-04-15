@@ -28,22 +28,115 @@ export const SocMed = [
   {
     to: 'https://www.linkedin.com/in/michael-joseph-asprec-254071251/',
     name: 'LinkedIn',
+    animation: {
+      initial: {
+        x: -200,
+        opacity: 0,
+      },
+      animate: {
+        x: 0,
+        opacity: 1,
+      },
+      transition: {
+        duration: 1.5,
+      },
+      whileHover: {
+        y: -2,
+      },
+      whileTap: {
+        scale: 0.9,
+      },
+    },
   },
   {
     to: 'https://github.com/mjasprec14',
     name: 'GitHub',
+    animation: {
+      initial: {
+        y: 200,
+        opacity: 0,
+      },
+      animate: {
+        y: 0,
+        opacity: 1,
+      },
+      transition: {
+        duration: 2.5,
+      },
+      whileHover: {
+        y: -2,
+      },
+      whileTap: {
+        scale: 0.9,
+      },
+    },
   },
   {
     to: 'https://read.cv/mjasprec',
     name: 'Read.cv',
+    animation: {
+      initial: {
+        opacity: 0,
+      },
+      animate: {
+        opacity: 1,
+      },
+      transition: {
+        duration: 3,
+      },
+      whileHover: {
+        y: -2,
+      },
+      whileTap: {
+        scale: 0.9,
+      },
+    },
   },
   {
     to: 'https://www.facebook.com/MichaelJosephAsprec',
     name: 'Facebook',
+    animation: {
+      initial: {
+        y: -200,
+        opacity: 0,
+      },
+      animate: {
+        y: 0,
+        opacity: 1,
+      },
+      transition: {
+        duration: 2,
+      },
+      whileHover: {
+        y: -2,
+      },
+      whileTap: {
+        scale: 0.9,
+      },
+    },
   },
   {
     to: 'https://twitter.com/MjAsprec',
     name: 'Twitter',
+    animation: {
+      initial: {
+        x: 200,
+        opacity: 0,
+      },
+      animate: {
+        x: 0,
+        opacity: 1,
+      },
+      transition: {
+        duration: 1,
+      },
+      whileHover: {
+        y: -2,
+      },
+      whileTap: {
+        scale: 0.9,
+      },
+    },
   },
 ];
 

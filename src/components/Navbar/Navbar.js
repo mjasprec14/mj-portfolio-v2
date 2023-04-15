@@ -3,6 +3,8 @@ import React from 'react';
 import { NavLinks, SocMed, CustomLink } from './Navbar.utils';
 import { Logo } from '@components/index';
 
+import { SocialIcon } from 'react-social-icons';
+
 const Navbar = () => {
   return (
     <header className='w-full px-32 py-8 font-medium flex justify-between items-center relative'>
@@ -17,13 +19,18 @@ const Navbar = () => {
         ))}
       </nav>
 
-      <nav className='space-x-4'>
+      <nav className='flex items-center justify-end flex-wrap'>
         {SocMed?.map((soc, idx) => (
           <Link
             key={idx}
             href={soc.to}
+            target='_blank'
           >
-            {soc.name}
+            <SocialIcon
+              url={soc.to}
+              // bgColor='transparent'
+              // fgColor='gray'
+            />
           </Link>
         ))}
       </nav>

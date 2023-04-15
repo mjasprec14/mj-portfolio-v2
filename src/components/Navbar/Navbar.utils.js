@@ -145,11 +145,11 @@ export const CustomLink = ({ to, name, className = '' }) => {
   return (
     <Link
       href={to}
-      className={`relative group ${className}`}
+      className={`text-gray-500 text-sm tracking-wide font-semibold uppercase relative group ${className}`}
     >
       {name}
       <span
-        className={`h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+        className={`h-[2px] inline-block bg-gray-500 absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           router.asPath === to ? 'w-full' : 'w-0'
         }`}
       >

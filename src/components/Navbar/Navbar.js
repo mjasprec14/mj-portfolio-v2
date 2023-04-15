@@ -7,8 +7,8 @@ import { SocialIcon } from 'react-social-icons';
 
 const Navbar = () => {
   return (
-    <header className='w-full px-32 py-8 font-medium flex justify-between items-center relative'>
-      <nav className='space-x-4'>
+    <header className='w-full px-32 py-8 font-medium flex justify-between items-center relative overflow-hidden'>
+      <nav className='space-x-8'>
         {NavLinks?.map((link, idx) => (
           <CustomLink
             key={idx}

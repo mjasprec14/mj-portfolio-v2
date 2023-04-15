@@ -1,12 +1,5 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import {
-  FacebookIcon,
-  LinkedInIcon,
-  GithubIcon,
-  ReadCVIcon,
-  TwitterIcon,
-} from '@components/Icons/Icons';
 
 export const NavLinks = [
   {
@@ -35,27 +28,22 @@ export const SocMed = [
   {
     to: 'https://www.linkedin.com/in/michael-joseph-asprec-254071251/',
     name: 'LinkedIn',
-    component: <LinkedInIcon className={'h-8'} />,
   },
   {
     to: 'https://github.com/mjasprec14',
     name: 'GitHub',
-    component: <GithubIcon className={'h-8'} />,
   },
-  // {
-  //   to: 'https://read.cv/mjasprec',
-  //   name: 'Read.cv',
-  //   component: <ReadCVIcon className={'h-8'} />,
-  // },
+  {
+    to: 'https://read.cv/mjasprec',
+    name: 'Read.cv',
+  },
   {
     to: 'https://www.facebook.com/MichaelJosephAsprec',
     name: 'Facebook',
-    component: <FacebookIcon className={'h-8'} />,
   },
   {
     to: 'https://twitter.com/MjAsprec',
     name: 'Twitter',
-    component: <TwitterIcon className={'h-6'} />,
   },
 ];
 

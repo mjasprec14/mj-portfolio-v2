@@ -1,7 +1,7 @@
 import '@styles/globals.css';
 import { Roboto } from 'next/font/google';
 import Head from 'next/head';
-import { NavBar } from '@components/index';
+import { Navbar } from '@components/index';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
       <main
         className={`${roboto.variable} font-rob bg-light w-full min-h-screen`}
       >
-        <NavBar />
+        <Navbar />
         <Component {...pageProps} />
       </main>
     </>

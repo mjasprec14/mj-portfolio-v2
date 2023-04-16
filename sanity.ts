@@ -7,4 +7,4 @@ export const config = {
   useCdn: false,
 };
 
-export const client = createClient(config);
+export const sanityClient = createClient(config);

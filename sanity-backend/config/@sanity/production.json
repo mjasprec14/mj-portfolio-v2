@@ -1,0 +1,10 @@
+{
+  "api": {
+    "projectId": "hewoqwvv",
+    "dataset": "production"
+  },
+  "studio": {
+    "previewUrl": "/api/preview",
+    "projectUrl": "https://mj-portfolio-v2.vercel.app"
+  }
+}
